@@ -1,0 +1,1011 @@
+{
+  "version": 1,
+  "activeCourseId": "python",
+  "courses": [
+    {
+      "id": "python",
+      "title": "Parcours Python — apprendre à programmer pour créer",
+      "shortTitle": "Python",
+      "description": "Programme progressif et fondé sur des projets : chaque leçon commence par le cours, puis la pratique. Référentiel IFAGE niveaux 1 et 2, enrichi de pratiques modernes. Sans calendrier.",
+      "level": "Débutant → autonome",
+      "createdAt": "2026-10-28T18:00:00.000Z",
+      "goals": [
+        "analyser un problème et concevoir une solution en Python",
+        "écrire, lire, déboguer et tester ton code seul",
+        "structurer un programme en fonctions, modules et classes",
+        "exploiter fichiers, données, API et bases SQL",
+        "livrer une petite application utile et documentée"
+      ],
+      "modules": [
+        {
+          "id": "module-0-bases",
+          "title": "Module 0 — Les bases de Python",
+          "description": "Un premier tour complet de la syntaxe, une notion par leçon : le cours d'abord, puis la pratique. Les modules suivants approfondissent.",
+          "lessons": [
+            {
+              "id": "m0-premiers-pas",
+              "title": "Premiers pas : afficher, variables, lancer un script",
+              "duration": 20,
+              "objectives": [
+                "afficher du texte et des valeurs avec print()",
+                "créer une variable, la réaffecter et prédire ce qu'elle contient",
+                "lancer un script avec python3 et lire sa sortie"
+              ],
+              "status": "current"
+            },
+            {
+              "id": "m0-types",
+              "title": "Types et comparaisons",
+              "duration": 20,
+              "objectives": [
+                "reconnaître int, float, str et bool",
+                "calculer avec + - * / // % ** et prédire le type du résultat",
+                "comparer deux valeurs et convertir avec int(), float() ou str()"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-conditions",
+              "title": "Conditions : if, elif, else",
+              "duration": 20,
+              "objectives": [
+                "écrire un if / elif / else qui choisit la bonne branche",
+                "combiner des conditions avec and, or et not",
+                "prédire quelle ligne s'exécute selon l'indentation"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-boucles",
+              "title": "Boucles for et range",
+              "duration": 20,
+              "objectives": [
+                "répéter une action avec for et range(début, fin, pas)",
+                "prédire les valeurs d'un range, borne de fin exclue",
+                "accumuler un total ou un compteur dans une boucle"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-listes",
+              "title": "Listes",
+              "duration": 20,
+              "objectives": [
+                "créer une liste et lire un élément par son indice, y compris négatif",
+                "modifier un élément par affectation indicée",
+                "savoir que les indices vont de 0 à len - 1 et reconnaître IndexError"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-listes-operations",
+              "title": "Opérations sur les listes",
+              "duration": 20,
+              "objectives": [
+                "ajouter et retirer des éléments avec append, insert, remove et pop",
+                "tester l'appartenance avec in et compter avec len()",
+                "extraire une tranche et trier avec sort() ou sorted()"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-saisie",
+              "title": "Demander une valeur : input() et while",
+              "duration": 25,
+              "objectives": [
+                "demander une valeur avec input() et la convertir en nombre",
+                "répéter avec while tant qu'une condition est vraie, sans boucle infinie",
+                "redemander une réponse tant qu'elle n'est pas valide"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-chaines",
+              "title": "Opérations sur les chaînes",
+              "duration": 20,
+              "objectives": [
+                "assembler un texte avec une f-string",
+                "utiliser upper, lower, strip, replace, split et join",
+                "lire un caractère ou une tranche, et savoir qu'une chaîne ne se modifie pas"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-fonctions",
+              "title": "Fonctions : def, paramètres et return",
+              "duration": 25,
+              "objectives": [
+                "définir une fonction avec def et l'appeler avec des arguments",
+                "renvoyer un résultat avec return plutôt que l'afficher",
+                "prédire la valeur renvoyée par un appel"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-collections",
+              "title": "Tuples, dictionnaires et ensembles",
+              "duration": 25,
+              "objectives": [
+                "regrouper des valeurs fixes dans un tuple et le déballer",
+                "ranger et retrouver des valeurs par clé dans un dictionnaire, le parcourir avec items()",
+                "éliminer des doublons avec un ensemble (set)"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-comprehensions",
+              "title": "Compréhensions de listes",
+              "duration": 20,
+              "objectives": [
+                "transformer une boucle qui remplit une liste en compréhension",
+                "filtrer avec une condition dans une compréhension",
+                "garder la boucle classique quand elle est plus lisible"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-classes",
+              "title": "Classes et objets",
+              "duration": 25,
+              "objectives": [
+                "définir une classe avec __init__ et des attributs",
+                "créer plusieurs objets et appeler leurs méthodes",
+                "expliquer le rôle de self"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-heritage",
+              "title": "Héritage : réutiliser une classe",
+              "duration": 25,
+              "objectives": [
+                "créer une classe enfant qui hérite d'une classe parente",
+                "redéfinir une méthode et appeler celle du parent avec super()",
+                "dire quand l'héritage est utile"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-modules",
+              "title": "Modules et bibliothèque standard",
+              "duration": 15,
+              "objectives": [
+                "importer un module de la bibliothèque standard (random, math)",
+                "distinguer import module et from module import nom",
+                "importer une fonction écrite dans un autre fichier"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-exceptions",
+              "title": "Erreurs et exceptions",
+              "duration": 20,
+              "objectives": [
+                "lire un message d'erreur : type, ligne et cause",
+                "intercepter une erreur prévisible avec try / except",
+                "redemander une saisie invalide grâce à ValueError"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m0-projet-nombre",
+              "title": "Mini-projet : le nombre mystère",
+              "duration": 45,
+              "objectives": [
+                "écrire un jeu complet : tirage au hasard, essais, indices plus ou moins",
+                "organiser le programme en fonctions",
+                "gérer une saisie invalide sans planter et proposer de rejouer"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-1-penser",
+          "title": "Module 1 — Penser comme un programmeur",
+          "description": "Passer d'un problème exprimé en français à un programme fiable. Entrées, traitements, sorties, débogage.",
+          "lessons": [
+            {
+              "id": "m1-decomposer",
+              "title": "Reformuler un besoin en entrées, traitements et sorties",
+              "duration": 20,
+              "objectives": [
+                "reformuler un énoncé en entrées, traitements et sorties",
+                "découper un problème en étapes et l'écrire en pseudo-code"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m1-etat",
+              "title": "Variables, expressions, instructions et état",
+              "duration": 20,
+              "objectives": [
+                "distinguer variable, expression et instruction",
+                "suivre l'état d'un programme ligne par ligne dans un tableau de trace"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m1-conditions-boucles",
+              "title": "Construire un algorithme avec conditions et boucles",
+              "duration": 25,
+              "objectives": [
+                "combiner conditions et boucles pour résoudre un petit problème",
+                "corriger une boucle qui ne s'arrête pas ou s'arrête trop tôt"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m1-erreurs",
+              "title": "Lire une trace d'exécution et distinguer les erreurs",
+              "duration": 20,
+              "objectives": [
+                "lire un traceback de bas en haut : type, message et ligne",
+                "distinguer erreur de syntaxe, exception et erreur de logique"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m1-environnement",
+              "title": "Terminal, VS Code, interpréteur et débogueur",
+              "duration": 30,
+              "objectives": [
+                "lancer un script dans le terminal et essayer une ligne dans l'interpréteur",
+                "poser un point d'arrêt et inspecter les variables dans VS Code"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m1-assert",
+              "title": "Premiers tests avec assert : attendu / obtenu",
+              "duration": 20,
+              "objectives": [
+                "écrire un assert qui compare l'obtenu à l'attendu",
+                "tester un cas normal et un cas limite"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m1-projet-duel",
+              "title": "Mini-projet : simulateur de duel",
+              "duration": 60,
+              "objectives": [
+                "transformer des règles de jeu en algorithme",
+                "programmer une version jouable au tour par tour",
+                "corriger un bug introduit dans le code"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-2-algorithmes",
+          "title": "Module 2 — Algorithmes et collections",
+          "description": "Représenter un problème et choisir la bonne structure de données.",
+          "lessons": [
+            {
+              "id": "m2-sequences",
+              "title": "Listes, tuples et chaînes : choisir la bonne séquence",
+              "duration": 25,
+              "objectives": [
+                "choisir entre liste, tuple et chaîne selon le besoin",
+                "distinguer données mutables et immuables"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m2-dictionnaires",
+              "title": "Dictionnaires et ensembles en pratique",
+              "duration": 25,
+              "objectives": [
+                "compter, regrouper et rechercher avec un dictionnaire",
+                "utiliser un ensemble pour les doublons et les appartenances"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m2-mutation",
+              "title": "Copies, mutation et alias",
+              "duration": 20,
+              "objectives": [
+                "prédire l'effet d'une modification quand deux noms désignent la même liste",
+                "copier une liste pour éviter un effet de bord"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m2-parcours",
+              "title": "Parcourir, filtrer et transformer",
+              "duration": 30,
+              "objectives": [
+                "utiliser enumerate, zip et sorted avec key",
+                "calculer avec min, max, sum, any et all",
+                "filtrer et transformer une collection"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m2-complexite",
+              "title": "Complexité intuitive : pourquoi certaines solutions sont lentes",
+              "duration": 20,
+              "objectives": [
+                "estimer le nombre d'opérations d'une boucle simple ou imbriquée",
+                "choisir un ensemble ou un dictionnaire pour une recherche rapide"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m2-projet-exploration",
+              "title": "Mini-projet : jeu d'exploration textuel",
+              "duration": 75,
+              "objectives": [
+                "représenter une carte par une grille et des objets par des dictionnaires",
+                "programmer déplacements, inventaire et interactions"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-3-fonctions",
+          "title": "Module 3 — Fonctions et conception",
+          "description": "Structurer une logique réutilisable. Paramètres, valeurs de retour, portée, décomposition, récursivité.",
+          "lessons": [
+            {
+              "id": "m3-definir",
+              "title": "Concevoir une fonction : paramètres, valeurs par défaut, docstring",
+              "duration": 25,
+              "objectives": [
+                "écrire une fonction avec des paramètres et des valeurs par défaut",
+                "documenter une fonction : docstring et annotations de type simples"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m3-retour",
+              "title": "Calculer ou afficher : return et effets",
+              "duration": 25,
+              "objectives": [
+                "séparer une fonction qui calcule d'une fonction qui affiche",
+                "expliquer la différence entre print et return"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m3-portee",
+              "title": "Portée des variables",
+              "duration": 20,
+              "objectives": [
+                "prédire quelle variable est utilisée : locale ou globale",
+                "remplacer une variable globale par un argument"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m3-decomposer",
+              "title": "Décomposer un programme en fonctions",
+              "duration": 30,
+              "objectives": [
+                "transformer un long script en petites fonctions testables",
+                "nommer chaque fonction selon sa responsabilité"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m3-recursivite",
+              "title": "Première approche de la récursivité",
+              "duration": 25,
+              "objectives": [
+                "écrire une fonction récursive avec un cas de base",
+                "suivre les appels récursifs sur un petit exemple"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m3-projet-quiz",
+              "title": "Mini-projet : moteur de quiz pédagogique",
+              "duration": 75,
+              "objectives": [
+                "construire un quiz avec score et retour, par petites fonctions",
+                "ajouter un mode de jeu sans dupliquer de code"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-4-fichiers",
+          "title": "Module 4 — Fichiers, erreurs et formats",
+          "description": "Lire, écrire, conserver et exploiter des données. Exceptions, CSV, JSON, dates, expressions régulières.",
+          "lessons": [
+            {
+              "id": "m4-lire-ecrire",
+              "title": "Lire et écrire un fichier",
+              "duration": 25,
+              "objectives": [
+                "ouvrir un fichier avec with et pathlib, en UTF-8",
+                "lire ligne par ligne et écrire sans écraser par accident"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m4-exceptions",
+              "title": "Gérer les erreurs avec try / except",
+              "duration": 25,
+              "objectives": [
+                "intercepter une exception précise et réagir",
+                "utiliser else, finally et raise à bon escient"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m4-csv-json",
+              "title": "CSV et JSON",
+              "duration": 30,
+              "objectives": [
+                "lire et écrire un fichier CSV avec le module csv",
+                "sauvegarder et recharger des données en JSON"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m4-dates",
+              "title": "Dates et heures",
+              "duration": 20,
+              "objectives": [
+                "créer, formater et comparer des dates avec datetime",
+                "calculer une durée avec timedelta"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m4-regex",
+              "title": "Expressions régulières",
+              "duration": 30,
+              "objectives": [
+                "trouver un motif avec re.search et re.findall",
+                "préférer une méthode de chaîne quand elle suffit"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m4-projet-fiches",
+              "title": "Mini-projet : fabrique de questions et fiches",
+              "duration": 75,
+              "objectives": [
+                "charger des questions en CSV ou JSON et signaler les lignes mal formées",
+                "générer une série d'exercices en texte ou en HTML simple"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-5-modules-tests",
+          "title": "Module 5 — Modules, tests et qualité",
+          "description": "Maintenir et faire évoluer du code. Modules, environnements virtuels, tests, Git, refactorisation.",
+          "lessons": [
+            {
+              "id": "m5-modules",
+              "title": "Organiser son code en modules",
+              "duration": 25,
+              "objectives": [
+                "découper un projet en modules et en paquet",
+                "écrire un point d'entrée main() avec if __name__ == \"__main__\""
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m5-venv",
+              "title": "Environnements virtuels et dépendances",
+              "duration": 20,
+              "objectives": [
+                "créer et activer un environnement virtuel avec venv",
+                "installer une dépendance avec pip et la noter"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m5-tests",
+              "title": "Écrire des tests avec pytest",
+              "duration": 30,
+              "objectives": [
+                "écrire des tests pytest pour des cas normaux, limites et invalides",
+                "lire un test qui échoue et corriger le code"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m5-git",
+              "title": "Git : conserver et faire évoluer son code",
+              "duration": 30,
+              "objectives": [
+                "créer un dépôt, faire des commits clairs et lire l'historique",
+                "revenir sur une modification"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m5-refactor",
+              "title": "Relire, refactoriser et documenter",
+              "duration": 25,
+              "objectives": [
+                "renommer, simplifier et supprimer une duplication sans changer le comportement",
+                "utiliser un formateur et un vérificateur (Ruff) en comprenant ses remarques"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m5-projet-refactor",
+              "title": "Mini-projet : sauver un projet mal organisé",
+              "duration": 75,
+              "objectives": [
+                "comprendre un projet inconnu, corriger ses bugs et ajouter des tests",
+                "extraire des modules sans casser le comportement"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-6-poo",
+          "title": "Module 6 — Programmation orientée objet",
+          "description": "Modéliser les comportements d'une application. Classes, encapsulation, composition, héritage, méthodes spéciales.",
+          "lessons": [
+            {
+              "id": "m6-classes",
+              "title": "Modéliser avec des classes",
+              "duration": 30,
+              "objectives": [
+                "choisir entre fonction, dictionnaire, dataclass et classe",
+                "concevoir une classe dont l'état reste cohérent"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m6-encapsulation",
+              "title": "Encapsulation et responsabilités",
+              "duration": 25,
+              "objectives": [
+                "protéger l'état d'un objet avec des méthodes et @property",
+                "donner une seule responsabilité à chaque classe"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m6-heritage",
+              "title": "Composition, héritage et polymorphisme",
+              "duration": 30,
+              "objectives": [
+                "choisir entre composition et héritage, et le justifier",
+                "appeler une même méthode sur des objets de classes différentes"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m6-methodes-speciales",
+              "title": "Méthodes spéciales et surcharge d'opérateurs",
+              "duration": 25,
+              "objectives": [
+                "écrire __str__, __repr__ et __eq__",
+                "surcharger un opérateur quand c'est naturel"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m6-projet-rpg",
+              "title": "Mini-projet : mini-RPG pédagogique",
+              "duration": 90,
+              "objectives": [
+                "modéliser personnages, objets et quêtes avec des classes utiles",
+                "ajouter un type d'objet sans modifier toutes les classes"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-7-avance",
+          "title": "Module 7 — Python expressif et avancé",
+          "description": "Manipuler proprement des traitements. Lambda, map/filter/reduce, closures, générateurs, décorateurs.",
+          "lessons": [
+            {
+              "id": "m7-lambda",
+              "title": "Lambda, map, filter, reduce",
+              "duration": 25,
+              "objectives": [
+                "écrire une lambda comme clé de tri ou de filtre",
+                "comparer map et filter à une compréhension, et choisir la plus lisible"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m7-comprehensions",
+              "title": "Compréhensions avancées et expressions génératrices",
+              "duration": 20,
+              "objectives": [
+                "écrire des compréhensions de dictionnaires et d'ensembles",
+                "utiliser une expression génératrice avec sum, any ou all"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m7-closures",
+              "title": "Fonctions imbriquées et closures",
+              "duration": 25,
+              "objectives": [
+                "passer une fonction en argument et en renvoyer une",
+                "expliquer ce qu'une closure retient"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m7-generateurs",
+              "title": "Itérateurs et générateurs",
+              "duration": 25,
+              "objectives": [
+                "écrire un générateur avec yield",
+                "traiter un flux élément par élément sans tout charger"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m7-decorateurs",
+              "title": "Décorateurs",
+              "duration": 25,
+              "objectives": [
+                "lire et expliquer un décorateur d'une bibliothèque",
+                "écrire un décorateur simple : chronomètre ou journal"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m7-projet-defis",
+              "title": "Mini-projet : générateur de défis logiques",
+              "duration": 60,
+              "objectives": [
+                "produire des défis variés à la demande avec un générateur",
+                "filtrer les défis selon des critères"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-8-api-bdd",
+          "title": "Module 8 — API, Web et bases de données",
+          "description": "Connecter une application au monde extérieur. HTTP, API JSON, SQL avec SQLite, secrets hors du code.",
+          "lessons": [
+            {
+              "id": "m8-http",
+              "title": "HTTP et requêtes réseau",
+              "duration": 25,
+              "objectives": [
+                "expliquer client, serveur, URL, GET, POST et codes de statut",
+                "lire une réponse HTTP et ses en-têtes"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m8-api",
+              "title": "Consommer une API JSON",
+              "duration": 30,
+              "objectives": [
+                "interroger une API JSON avec requests et exploiter la réponse",
+                "gérer erreurs, délais d'attente et données manquantes",
+                "garder une clé d'API hors du code et de Git"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m8-sqlite",
+              "title": "SQL avec SQLite",
+              "duration": 35,
+              "objectives": [
+                "créer une table, puis insérer, lire, modifier et supprimer des lignes",
+                "filtrer, trier et joindre deux tables"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m8-sql-python",
+              "title": "SQLite depuis Python : requêtes paramétrées",
+              "duration": 30,
+              "objectives": [
+                "interroger une base SQLite depuis Python avec sqlite3",
+                "passer les valeurs en paramètres plutôt que dans la chaîne SQL",
+                "choisir entre JSON, CSV et base de données"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m8-projet-bibliotheque",
+              "title": "Mini-projet : bibliothèque d'activités",
+              "duration": 75,
+              "objectives": [
+                "concevoir un petit schéma et écrire les requêtes essentielles",
+                "importer et exporter du JSON, et intégrer une source externe"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-9-donnees",
+          "title": "Module 9 — Analyse et visualisation",
+          "description": "Explorer, transformer et représenter des données avec NumPy, pandas et Matplotlib.",
+          "lessons": [
+            {
+              "id": "m9-numpy",
+              "title": "NumPy : tableaux et calcul",
+              "duration": 25,
+              "objectives": [
+                "créer un tableau NumPy et calculer sans boucle",
+                "sélectionner des valeurs avec un masque"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m9-pandas",
+              "title": "pandas : charger et transformer des données",
+              "duration": 35,
+              "objectives": [
+                "charger un CSV dans un DataFrame et repérer les problèmes de qualité",
+                "filtrer, regrouper et agréger des données"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m9-stats",
+              "title": "Statistiques descriptives utiles",
+              "duration": 25,
+              "objectives": [
+                "calculer moyenne, médiane et dispersion, et repérer une valeur aberrante",
+                "utiliser SciPy sur un cas concret",
+                "distinguer corrélation et conclusion"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m9-matplotlib",
+              "title": "Visualiser avec Matplotlib",
+              "duration": 30,
+              "objectives": [
+                "tracer un graphique lisible : axes, titre et légende",
+                "choisir le type de graphique adapté à la question"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m9-projet-dashboard",
+              "title": "Mini-projet : observatoire des apprentissages",
+              "duration": 75,
+              "objectives": [
+                "analyser des résultats fictifs par notion et montrer leur évolution",
+                "écrire ce que les chiffres permettent de conclure, et ce qu'ils ne permettent pas"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-10-interfaces",
+          "title": "Module 10 — Interfaces et architecture",
+          "description": "Passer du script à un outil utilisable. Séparation des responsabilités, Tkinter, API web.",
+          "lessons": [
+            {
+              "id": "m10-architecture",
+              "title": "Séparer logique, données et interface",
+              "duration": 25,
+              "objectives": [
+                "séparer règles métier, données et affichage",
+                "tester la logique sans l'interface"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m10-tkinter",
+              "title": "Première interface avec Tkinter",
+              "duration": 30,
+              "objectives": [
+                "créer une fenêtre avec des widgets : champ, bouton, étiquette",
+                "réagir à un clic"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m10-evenements",
+              "title": "Événements et état de l'interface",
+              "duration": 30,
+              "objectives": [
+                "mettre l'interface à jour quand l'état change",
+                "afficher un message d'erreur clair"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m10-api-web",
+              "title": "Exposer une API web avec FastAPI",
+              "duration": 30,
+              "objectives": [
+                "créer une route GET et une route POST avec FastAPI",
+                "réutiliser la logique existante sans la réécrire"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m10-projet-app",
+              "title": "Mini-projet : atelier pédagogique utilisable",
+              "duration": 90,
+              "objectives": [
+                "donner une interface, Tkinter ou API, à un projet existant",
+                "garder la logique centrale intacte et testée"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-11-reseau",
+          "title": "Module 11 — Réseau et concurrence",
+          "description": "Comprendre les échanges et l'exécution simultanée. Sockets, threads, asynchronisme.",
+          "lessons": [
+            {
+              "id": "m11-sockets",
+              "title": "Sockets et client/serveur",
+              "duration": 35,
+              "objectives": [
+                "écrire un petit serveur et un client TCP locaux",
+                "expliquer adresse IP, port et trajet d'un message"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m11-threads",
+              "title": "Threads et processus",
+              "duration": 30,
+              "objectives": [
+                "lancer des tâches en parallèle avec concurrent.futures",
+                "savoir quand des threads n'accélèrent pas un calcul"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m11-async",
+              "title": "Asynchronisme avec asyncio",
+              "duration": 30,
+              "objectives": [
+                "écrire des coroutines avec async et await",
+                "attendre plusieurs tâches avec asyncio.gather"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m11-projet-reseau",
+              "title": "Mini-projet : jeu de devinettes en réseau local",
+              "duration": 75,
+              "objectives": [
+                "faire dialoguer un serveur et des clients textuels",
+                "gérer les erreurs réseau courantes"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-12-distribution",
+          "title": "Module 12 — Finalisation et distribution",
+          "description": "Livrer, documenter et intégrer un logiciel. Empaquetage, documentation, interopérabilité.",
+          "lessons": [
+            {
+              "id": "m12-empaqueter",
+              "title": "Empaqueter et installer son application",
+              "duration": 30,
+              "objectives": [
+                "décrire un projet dans pyproject.toml",
+                "installer son projet dans un environnement neuf et le lancer"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m12-documenter",
+              "title": "Documenter un projet",
+              "duration": 25,
+              "objectives": [
+                "écrire un README : but, installation, utilisation, limites",
+                "fournir un exemple reproductible"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m12-interop",
+              "title": "Interopérabilité avec d'autres systèmes",
+              "duration": 30,
+              "objectives": [
+                "échanger avec un autre programme par fichier, API ou sous-processus",
+                "expliquer le principe d'une extension C avec ctypes"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m12-projet-livraison",
+              "title": "Mini-projet : version distribuable",
+              "duration": 60,
+              "objectives": [
+                "publier une version installable d'un projet précédent",
+                "faire suivre le README par quelqu'un d'autre, sans aide"
+              ],
+              "status": "todo"
+            }
+          ]
+        },
+        {
+          "id": "module-13-portfolio",
+          "title": "Module 13 — Projet final de portfolio",
+          "description": "Concevoir et réaliser une application originale de bout en bout.",
+          "lessons": [
+            {
+              "id": "m13-cadrage",
+              "title": "Cadrer le projet : problème, utilisateurs, périmètre",
+              "duration": 30,
+              "objectives": [
+                "décrire l'utilisateur, le besoin et le scénario de démonstration",
+                "lister les fonctionnalités indispensables et les limites"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m13-conception",
+              "title": "Concevoir l'architecture et les données",
+              "duration": 45,
+              "objectives": [
+                "découper le projet : données, logique, entrées-sorties, tests, interface",
+                "choisir le stockage et les structures de données"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m13-prototype",
+              "title": "Réaliser un prototype minimal",
+              "duration": 60,
+              "objectives": [
+                "faire fonctionner le scénario central de bout en bout",
+                "enregistrer chaque étape dans un commit clair"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m13-realisation",
+              "title": "Itérer : fonctionnalités, tests et relecture",
+              "duration": 90,
+              "objectives": [
+                "ajouter les fonctionnalités par petites itérations testées",
+                "faire relire le code et expliquer les changements"
+              ],
+              "status": "todo"
+            },
+            {
+              "id": "m13-finalisation",
+              "title": "Finaliser, documenter et soutenir",
+              "duration": 60,
+              "objectives": [
+                "rédiger le README, les captures et les limites connues",
+                "présenter l'architecture et modifier le code en direct"
+              ],
+              "status": "todo"
+            }
+          ]
+        }
+      ],
+      "sessions": [],
+      "memory": {
+        "lastSessionId": null,
+        "acquired": [],
+        "toReview": [],
+        "nextFocus": "Commencer la leçon « Premiers pas » du module 0.",
+        "notes": "",
+        "reviews": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "activeCourseId": "python",
+  "updatedAt": "2026-11-03T09:30:00.000Z",
+  "courses": [
+    {
+      "id": "python",
+      "title": "Apprentissage du Python",
+      "shortTitle": "Python",
+      "description": "Des premières variables à un petit projet complet, avec une pratique guidée à chaque étape.",
+      "level": "Débutant",
+      "createdAt": "2026-10-28T18:00:00.000Z",
+      "updatedAt": "2026-11-03T09:30:00.000Z",
+      "modules": [
+        {
+          "id": "foundations",
+          "title": "Les fondations",
+          "description": "Écrire, afficher et comprendre ses premières instructions.",
+          "lessons": [
+            {"id": "first-script", "title": "Écrire son premier script", "status": "done", "duration": 20},
+            {"id": "variables-types", "title": "Variables et types", "status": "done", "duration": 30},
+            {"id": "input-output", "title": "Afficher et demander une valeur", "status": "done", "duration": 25}
+          ]
+        },
+        {
+          "id": "control-flow",
+          "title": "Contrôler le déroulement",
+          "description": "Faire des choix, répéter et suivre l’exécution.",
+          "lessons": [
+            {"id": "conditions", "title": "Conditions et comparaisons", "status": "done", "duration": 35},
+            {"id": "loops", "title": "Boucles for et while", "status": "done", "duration": 40},
+            {"id": "debug-flow", "title": "Lire et corriger une erreur", "status": "done", "duration": 25}
+          ]
+        },
+        {
+          "id": "functions",
+          "title": "Construire avec des fonctions",
+          "description": "Découper un problème en instructions réutilisables.",
+          "lessons": [
+            {"id": "functions-write", "title": "Écrire une fonction", "status": "current", "duration": 35},
+            {"id": "functions-return", "title": "Arguments et valeurs de retour", "status": "todo", "duration": 35},
+            {"id": "functions-scope", "title": "Comprendre la portée des variables", "status": "todo", "duration": 30}
+          ]
+        },
+        {
+          "id": "data-structures",
+          "title": "Organiser les données",
+          "description": "Choisir la bonne structure pour représenter une information.",
+          "lessons": [
+            {"id": "lists", "title": "Listes et tuples", "status": "todo", "duration": 40},
+            {"id": "dictionaries", "title": "Dictionnaires", "status": "todo", "duration": 40},
+            {"id": "data-choice", "title": "Choisir sa structure de données", "status": "todo", "duration": 30}
+          ]
+        },
+        {
+          "id": "files-errors",
+          "title": "Fichiers et erreurs",
+          "description": "Lire des données et rendre un script plus fiable.",
+          "lessons": [
+            {"id": "read-files", "title": "Lire et écrire un fichier", "status": "todo", "duration": 40},
+            {"id": "exceptions", "title": "Gérer les exceptions", "status": "todo", "duration": 35},
+            {"id": "tests", "title": "Tester une fonction", "status": "todo", "duration": 40}
+          ]
+        },
+        {
+          "id": "guided-project",
+          "title": "Projet guidé",
+          "description": "Assembler les acquis dans un carnet de notes en ligne de commande.",
+          "lessons": [
+            {"id": "project-design", "title": "Concevoir le carnet de notes", "status": "todo", "duration": 30},
+            {"id": "project-build", "title": "Coder les fonctionnalités", "status": "todo", "duration": 60},
+            {"id": "project-review", "title": "Relire et améliorer le projet", "status": "todo", "duration": 35}
+          ]
+        }
+      ],
+      "sessions": [
+        {
+          "id": "session-functions-1",
+          "title": "Les fonctions, première approche",
+          "startedAt": "2026-11-02T18:05:00.000Z",
+          "updatedAt": "2026-11-02T18:42:00.000Z",
+          "duration": 37,
+          "status": "active",
+          "lessonId": "functions-write",
+          "summary": "Alex sait définir et appeler une fonction. La différence entre afficher une valeur et la retourner reste à consolider.",
+          "messages": [
+            {
+              "id": "message-welcome",
+              "role": "tutor",
+              "createdAt": "2026-11-02T18:06:00.000Z",
+              "content": "Reprendons avec les fonctions. Une fonction regroupe des instructions sous un nom. Elle ne s’exécute que lorsqu’on l’appelle.\n\n```python\ndef saluer(nom):\n    return f\"Bonjour {nom} !\"\n\nmessage = saluer(\"Alex\")\nprint(message)\n```"
+            },
+            {
+              "id": "message-return-question",
+              "role": "user",
+              "createdAt": "2026-11-02T18:14:00.000Z",
+              "content": "Pourquoi utiliser return ici, plutôt que print directement dans la fonction ?"
+            },
+            {
+              "id": "message-return-answer",
+              "role": "tutor",
+              "createdAt": "2026-11-02T18:15:00.000Z",
+              "content": "`print` affiche une valeur à l’écran, tandis que `return` la transmet au reste du programme. Avec `return`, tu peux réutiliser le résultat, le stocker ou le tester.\n\n```python\ndef addition(a, b):\n    return a + b\n\ntotal = addition(4, 3)\nprint(total * 2)\n```\n\nEssaie maintenant d’écrire une fonction `aire_rectangle` qui reçoit une largeur et une hauteur, puis retourne l’aire."
+            },
+            {
+              "id": "message-exercise",
+              "role": "user",
+              "createdAt": "2026-11-02T18:38:00.000Z",
+              "content": "Je bloque encore sur la différence entre le moment où la fonction est définie et celui où elle est appelée."
+            }
+          ]
+        },
+        {
+          "id": "session-loops-2",
+          "title": "S’entraîner avec les boucles",
+          "startedAt": "2026-10-31T10:00:00.000Z",
+          "updatedAt": "2026-10-31T10:46:00.000Z",
+          "duration": 46,
+          "status": "completed",
+          "lessonId": "loops",
+          "summary": "Les boucles for sont comprises sur des listes simples. Les conditions d’arrêt d’une boucle while demandent encore de l’attention.",
+          "messages": [
+            {"id": "loops-tutor", "role": "tutor", "createdAt": "2026-10-31T10:02:00.000Z", "content": "Une boucle `for` parcourt les éléments un par un. Commençons avec une courte liste de prénoms."},
+            {"id": "loops-user", "role": "user", "createdAt": "2026-10-31T10:16:00.000Z", "content": "Je comprends mieux : la variable prend une nouvelle valeur à chaque tour."}
+          ]
+        }
+      ],
+      "memory": {
+        "lastSessionId": "session-functions-1",
+        "acquired": ["Définir une fonction avec def", "Appeler une fonction avec des arguments", "Utiliser une boucle for sur une liste"],
+        "toReview": ["Différence entre print et return", "Définition et appel d’une fonction", "Condition d’arrêt d’une boucle while"],
+        "nextFocus": "Écrire aire_rectangle, puis tester deux jeux de dimensions.",
+        "notes": "Privilégier un exercice très court au début de la prochaine session pour vérifier la distinction entre définition et appel."
+      }
+    }
+  ]
+}

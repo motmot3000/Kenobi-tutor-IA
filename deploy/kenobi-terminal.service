@@ -1,0 +1,16 @@
+# Kenobi terminal bridge for the computer that runs server.py (loopback only), as a systemd user service.
+# Adapt the path below to where you cloned the repository, then see docs/terminal.md.
+[Unit]
+Description=Kenobi - terminal bridge (loopback only)
+After=default.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Kenobi-tutor-IA
+Environment=KENOBI_TERMINAL_PORT=8194
+ExecStart=/usr/bin/python3 %h/Kenobi-tutor-IA/terminal_bridge.py --service
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target

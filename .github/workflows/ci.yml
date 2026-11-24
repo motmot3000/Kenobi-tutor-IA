@@ -1,0 +1,47 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Shells used by the terminal bridge tests
+        run: sudo apt-get update && sudo apt-get install -y zsh
+      - name: browser/shared.js is up to date
+        run: python3 scripts/build_browser.py --check
+      - name: JavaScript syntax
+        run: for f in *.js browser/*.js; do node --check "$f"; done
+      - name: JavaScript tests
+        run: node --test tests/*.test.js
+      - name: Python tests (server, bridges, parity between the two versions)
+        run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: The static site builds
+        run: python3 scripts/build_site.py --out /tmp/site
+
+  bridges-old-python:
+    # The bridges are downloaded by learners and must run on the python3 of an older Mac or Linux.
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9"]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: sudo apt-get update && sudo apt-get install -y zsh
+      - run: python -m py_compile terminal_bridge.py voice_bridge.py
+      - run: python -m unittest tests.test_terminal_bridge tests.test_voice_bridge

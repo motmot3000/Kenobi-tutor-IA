@@ -1,0 +1,61 @@
+{
+  "title": "Choisir la composition de Kenobi",
+  "question": "Trois organisations possibles pour ouvrir sur le plan Python, puis reprendre le cours sans perdre le contexte.",
+  "options": [
+    {
+      "id": "learning-ledger",
+      "label": "Carnet de progression",
+      "kicker": "THE ROLL",
+      "thesis": "Le plan et la mémoire encadrent une prochaine action très lisible.",
+      "palette": ["#171c2e", "#eaf0ea", "#f0c36c", "#ffffff"],
+      "materials": ["rail vert sapin", "plan clair", "repères ambre"],
+      "viewport": "Rail des apprentissages à gauche, plan au centre, mémoire de la dernière session à droite, bouton Reprendre dans l’en-tête du plan.",
+      "risk": "La colonne mémoire doit rester courte pour ne pas concurrencer le cours.",
+      "wireframe": {"cols":12,"rows":10,"regions":[
+        {"label":"apprentissages","x":0,"y":0,"w":2,"h":10,"accent":true},
+        {"label":"plan du parcours","x":2,"y":1,"w":7,"h":9},
+        {"label":"reprendre","x":7,"y":0,"w":2,"h":1,"accent":true},
+        {"label":"dernière session","x":9,"y":1,"w":3,"h":4},
+        {"label":"mémoire","x":9,"y":5,"w":3,"h":5}
+      ]},
+      "comp": ".impeccable/mocks/decision/learning-ledger.webp"
+    },
+    {
+      "id": "guided-chapters",
+      "label": "Chapitres guidés",
+      "thesis": "Les grandes parties du cours structurent l’écran avant le détail des leçons.",
+      "palette": ["#171c2e", "#eaf0ea", "#f0c36c", "#ffffff"],
+      "materials": ["rail vert sapin", "onglets de chapitres", "repères ambre"],
+      "viewport": "Rail des apprentissages, chapitres en haut, leçons du chapitre au centre et sessions récentes dessous, reprise toujours visible en haut à droite.",
+      "risk": "La navigation par chapitres ajoute un niveau à parcourir avant de retrouver une leçon.",
+      "wireframe": {"cols":12,"rows":10,"regions":[
+        {"label":"apprentissages","x":0,"y":0,"w":2,"h":10,"accent":true},
+        {"label":"chapitres","x":2,"y":0,"w":8,"h":2},
+        {"label":"reprendre","x":10,"y":0,"w":2,"h":2,"accent":true},
+        {"label":"leçons du chapitre","x":2,"y":2,"w":10,"h":5},
+        {"label":"sessions récentes","x":2,"y":7,"w":10,"h":3}
+      ]},
+      "comp": ".impeccable/mocks/decision/guided-chapters.webp"
+    },
+    {
+      "id": "work-table",
+      "label": "Table de travail",
+      "thesis": "Une seule surface rassemble la prochaine leçon, le plan et les sessions.",
+      "palette": ["#171c2e", "#eaf0ea", "#f0c36c", "#ffffff"],
+      "materials": ["rail vert sapin", "large surface claire", "repères ambre"],
+      "viewport": "Rail à gauche, prochaine étape et bouton Reprendre en haut du plan, progression verticale au centre, sessions repliables sans colonne supplémentaire.",
+      "risk": "La mémoire de session doit se replier pour éviter une page trop longue.",
+      "wireframe": {"cols":12,"rows":10,"regions":[
+        {"label":"apprentissages","x":0,"y":0,"w":2,"h":10,"accent":true},
+        {"label":"prochaine leçon","x":2,"y":0,"w":7,"h":3},
+        {"label":"reprendre","x":9,"y":0,"w":3,"h":3,"accent":true},
+        {"label":"plan détaillé","x":2,"y":3,"w":10,"h":4},
+        {"label":"sessions","x":2,"y":7,"w":10,"h":3}
+      ]},
+      "comp": ".impeccable/mocks/decision/work-table.webp"
+    }
+  ],
+  "reroll": true,
+  "steer": true,
+  "buildPath": {"value":"code","toggle":true}
+}

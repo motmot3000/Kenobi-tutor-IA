@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Progress, course documents and trash of the self-hosted version (personal data)
+data/runtime/
+
+# Static site built by scripts/build_site.py
+_site/
+
+# Design review tool (local only)
+.impeccable/
+
+# Editors and systems
+.DS_Store
+.vscode/
+.idea/
+node_modules/

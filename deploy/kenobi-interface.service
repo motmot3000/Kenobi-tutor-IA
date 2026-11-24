@@ -1,0 +1,19 @@
+# Kenobi, self-hosted version (server.py), as a systemd user service.
+# Adapt the path below to where you cloned the repository, then see docs/self-hosting.md.
+[Unit]
+Description=Kenobi - AI coding tutor (self-hosted server)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Kenobi-tutor-IA
+# 127.0.0.1: this computer only. 0.0.0.0: your local network too (see docs/self-hosting.md).
+Environment=KENOBI_HOST=127.0.0.1
+Environment=KENOBI_PORT=8192
+ExecStart=/usr/bin/python3 %h/Kenobi-tutor-IA/server.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
