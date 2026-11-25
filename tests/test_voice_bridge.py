@@ -715,6 +715,8 @@ class ManifestTests(unittest.TestCase):
 
     def run_installer(self, model="small"):
         """scripts/installer_voix.py from start to end, with its downloads replaced by stand-ins."""
+        if sys.version_info < (3, 9):
+            self.skipTest("installing the local voice requires Python 3.9+")
         python = vb.venv_python(self.root)
 
         def create_venv(root, report):
@@ -1141,6 +1143,10 @@ class CommandLineTests(unittest.TestCase):
         self.assertEqual(process.wait(20), 1)
         text = process.stdout.read().decode("utf-8")
         self.assertIn("La voix locale n'est pas encore installée", text)
+        if sys.version_info < (3, 9):
+            self.assertIn("Python 3.9 ou plus récent", text)
+            self.assertFalse(self.voice.exists())  # nothing downloaded, nothing created
+            return
         self.assertIn(f"Au total, environ 1,1 Go, dans {self.voice}", text)
         self.assertIn("--oui", text)
         self.assertFalse(self.voice.exists())  # nothing downloaded, nothing created

@@ -264,6 +264,11 @@ class FileTests(unittest.TestCase):
 def bridge_environment(root, shell=None, extra=None):
     home = root / "home"
     home.mkdir(exist_ok=True)
+    # Ubuntu's /etc/zsh/zshrc runs compinit unless skipped; on CI runners with group-writable dirs in fpath,
+    # compinit blocks waiting for [y/n] in the PTY before .zshrc loads the OSC 633 integration.
+    zshenv = home / ".zshenv"
+    if not zshenv.exists():
+        zshenv.write_text("skip_global_compinit=1\n", encoding="utf-8")
     env = dict(os.environ)
     env.update(
         HOME=str(home),
